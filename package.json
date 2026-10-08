@@ -1,0 +1,21 @@
+{
+  "name": "coxr",
+  "private": true,
+  "version": "0.0.0",
+  "description": "CoXR - 沉浸式协同数据可视化系统",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel --stream run dev",
+    "dev:web": "pnpm --filter @coxr/web run dev",
+    "dev:server": "pnpm --filter @coxr/server run dev",
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "clean": "pnpm -r run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@coxr/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types/index.ts",
+    "./constants": "./src/constants/index.ts",
+    "./schemas": "./src/schemas/index.ts",
+    "./yjs": "./src/yjs/index.ts",
+    "./factory": "./src/factory/index.ts",
+    "./derive": "./src/derive/index.ts",
+    "./permissions": "./src/permissions/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf node_modules .tsbuildinfo"
+  },
+  "dependencies": {
+    "yjs": "^13.6.20",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
